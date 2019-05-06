@@ -6,15 +6,15 @@ def readme():
         return f.read()
 
 setup(
-    name='PyRDW',
-    version='1.1',
-    description='PyRDW gives a basic way of fetching licensenumber-data from the RDW, the dutch department of road transport.',
+    name='Rdw',
+    version='3.0.0',
+    description='(Unofficial) Python wrapper for the rdw.nl website (Netherlands Vehicle Authority) which can be used to check vehicle information.',
     long_description=readme(),
-    url='http://github.com/rense/pyrdw',
-    author='Rense VanderHoek',
-    author_email='vanderhoek@gmail.com',
+    url='http://github.com/eelcohn/pypi-rdw',
+    author='Eelco Huininga',
+    author_email='eelcohn@github.com',
     license='MIT',
-    packages=['pyrdw'],
+    packages=['rdw'],
     zip_safe=False,
     include_package_data=True,
     classifiers=[
