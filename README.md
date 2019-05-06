@@ -1,6 +1,6 @@
 # rdw
 
-(Unofficial) Python wrapper for the rdw.nl website (Netherlands Vehicle Authority) which can be used to check vehicle information.
+(Unofficial) Python wrapper for the [RDW](https://www.rdw.nl/) API (Netherlands Vehicle Authority) which can be used to check vehicle information.
 
 ### Usage
 ```
