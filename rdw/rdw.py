@@ -6,7 +6,6 @@ Retrieves information on cars registered in the Netherlands.
 VERSION = '3.0.0'
 
 import json
-from datetime import datetime, timedelta
 try:
     # For Python 3.0 and later
     from urllib.request import urlopen
