@@ -1,4 +1,5 @@
-# rdw
+rdw
+===
 
 (Unofficial) Python wrapper for the [RDW](https://www.rdw.nl/) API (Netherlands Vehicle Authority) which can be used to check vehicle information.
 
@@ -13,16 +14,17 @@
 ```
 
 ### Function descriptions
-#### Rdw.get_deficiency_data(gebrek_identificatie)
+**`Rdw.get_deficiency_data(gebrek_identificatie)`**
+```
 On entry:
 * gebrek_identificatie: ID code of the deficiency
 
 On exit:
 * JSON object containing information on the deficiency
+```
+[RDW API documentation: 'Gebreken'](https://opendata.rdw.nl/Keuringen/Open-Data-RDW-Gebreken/hx2c-gt7k)
 
-RDW API documentation: 'Gebreken'
-
-RDW API endpoint: `https://opendata.rdw.nl/resource/tbph-ct3j.json`
+[RDW API endpoint](https://opendata.rdw.nl/resource/tbph-ct3j.json)
 
 
 #### Rdw.get_found_deficiencies_data(kenteken)
@@ -32,7 +34,7 @@ On entry:
 On exit:
 * JSON object containing information on the deficiencies for this car
 
-RDW API documentation: 'Geconstateerde gebreken'
+RDW API documentation: `Geconstateerde gebreken
 RDW API endpoint: `https://opendata.rdw.nl/resource/2u8a-sfar.json`
 
 
