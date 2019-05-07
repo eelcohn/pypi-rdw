@@ -1,9 +1,9 @@
+#!/usr/bin/python
+
 """
 RDW API Python Package version 3.0.0 Eelco Huininga 2019
 Retrieves information on cars registered in the Netherlands.
 """
-
-VERSION = '3.0.0'
 
 import json
 try:
