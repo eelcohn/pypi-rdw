@@ -20,13 +20,14 @@ class RdwException(Exception):
                 
 class Rdw(object):
     _RDWAPI_BASE_URL = 'https://opendata.rdw.nl/resource/{}.json?'
+    _RDWAPI_TERUGROEP_ACTIE_WEBLINK = 'https://terugroepregister.rdw.nl/Pages/Terugroepactie.aspx?mgpnummer={}'
+
     _RDWAPI_GEBREKEN = 'tbph-ct3j'
     _RDWAPI_GECONSTATEERDE_GEBREKEN = '2u8a-sfar'
     _RDWAPI_GEKENTEKENDE_VOERTUIGEN = 'm9d7-ebf2'
     _RDWAPI_TERUGROEP_ACTIE = 'af5r-44mf'
     _RDWAPI_TERUGROEP_ACTIE_RISICO = '9ihi-jgpf'
     _RDWAPI_TERUGROEP_ACTIE_STATUS = 't49b-isb7'
-    _RDWAPI_TERUGROEP_ACTIE_WEBLINK = 'https://terugroepregister.rdw.nl/Pages/Terugroepactie.aspx?mgpnummer={}'
     _RDWAPI_TERUGROEP_INFORMEREN_EIGENAAR = '223d-3w9w'
     _RDWAPI_TOEGEVOEGDE_OBJECTEN = '5bwx-4xqb'
 
