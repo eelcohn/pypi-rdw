@@ -19,6 +19,10 @@ class RdwException(Exception):
 
                 
 class Rdw(object):
+    """
+    Interface class for the RDW API's.
+    """
+
     _RDWAPI_BASE_URL = 'https://opendata.rdw.nl/resource/{}.json?'
     _RDWAPI_TERUGROEP_ACTIE_WEBLINK = 'https://terugroepregister.rdw.nl/Pages/Terugroepactie.aspx?mgpnummer={}'
 
@@ -31,9 +35,6 @@ class Rdw(object):
     _RDWAPI_TERUGROEP_INFORMEREN_EIGENAAR = '223d-3w9w'
     _RDWAPI_TOEGEVOEGDE_OBJECTEN = '5bwx-4xqb'
 
-    """
-    Interface class for the RDW API's.
-    """
     _current_status_code = None
 
     def __init__(self):
