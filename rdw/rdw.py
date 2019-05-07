@@ -26,6 +26,7 @@ class Rdw(object):
     _RDWAPI_TERUGROEP_ACTIE = 'af5r-44mf'
     _RDWAPI_TERUGROEP_ACTIE_RISICO = '9ihi-jgpf'
     _RDWAPI_TERUGROEP_ACTIE_STATUS = 't49b-isb7'
+    _RDWAPI_TERUGROEP_ACTIE_WEBLINK = 'https://terugroepregister.rdw.nl/Pages/Terugroepactie.aspx?mgpnummer={}'
     _RDWAPI_TERUGROEP_INFORMEREN_EIGENAAR = '223d-3w9w'
     _RDWAPI_TOEGEVOEGDE_OBJECTEN = '5bwx-4xqb'
 
@@ -102,6 +103,15 @@ class Rdw(object):
         """
 
         return self._get_rdwapi_data(self._RDWAPI_TERUGROEP_INFORMEREN_EIGENAAR, 'referentiecode_rdw={}'.format(referentiecode_rdw))
+
+    def get_recall_info_weblink(self, referentiecode_rdw):
+        """
+        Get data from the RDW Terugroep Informeren Eigenaar API
+        :param referentiecode_rdw: RDW reference code
+        :return: A JSON list containing the RDW Recall Risk data
+        """
+
+        return self._RDWAPI_TERUGROEP_ACTIE_WEBLINK.format(recall['referentiecode_rdw']
 
     def get_added_objects_data(self, kenteken):
         """
