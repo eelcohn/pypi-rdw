@@ -113,7 +113,7 @@ class Rdw(object):
         :return: A JSON list containing the RDW Recall Risk data
         """
 
-        return self._RDWAPI_TERUGROEP_ACTIE_WEBLINK.format(recall['referentiecode_rdw']
+        return self._RDWAPI_TERUGROEP_ACTIE_WEBLINK.format(recall['referentiecode_rdw'])
 
     def get_added_objects_data(self, kenteken):
         """
